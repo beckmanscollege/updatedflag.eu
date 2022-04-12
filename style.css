@@ -1,0 +1,188 @@
+body {
+  background-color: #003399 !important;
+}
+* {
+  cursor: url(https://cdn.glitch.global/7893a564-d329-49d6-ae3f-cc5926536343/EU_STAR.svg),
+    auto;
+}
+
+#EUSTAR {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box1 {
+  background-color: #003399;
+  width: 400px;
+  height: 80px;
+  border-radius: 30px;
+  position: absolute;
+  left: 13%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #ffcc00;
+  padding: 10px;
+}
+.rubrik {
+  color: #ffcc00;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+
+.box2 {
+  background-color: #ffcc00;
+  width: 300px;
+  height: 80px;
+  opacity: 0.8;
+  border-radius: 30px;
+  position: absolute;
+  left: 90%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #ffcc00;
+  padding: 10px;
+}
+.brodtext {
+  color: #003399;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+#message {
+  display: none;
+  color: #003399;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  background-color: #ffcc00;
+  width: 300px;
+  height: 90px;
+  opacity: 0.8;
+  border-radius: 30px;
+  position: absolute;
+  left: 90%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #ffcc00;
+  padding: 10px;
+}
+
+/*.box3 {
+  background-color: #ffcc00;
+  width: 300px;
+  height: 120px;
+  opacity: 0.8;
+  border-radius: 30px;
+  position: absolute;
+  left: 90%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #ffcc00;
+  padding: 10px;
+
+
+}
+.message {
+  color: #003399;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: left;
+}
+*/
+
+
+#circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.star {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("https://cdn.glitch.global/7893a564-d329-49d6-ae3f-cc5926536343/EU_STAR.svg");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+.webring {
+  margin: 0 auto;
+  width: 800px;
+  height: 100px;
+  position: fixed;
+  z-index: 1000000;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.3vw;
+  text-align: center;
+  }
+
+.webring a {
+  color: #ffcc00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.webringarrow a {
+  color: #ffcc00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: 0;
+  font-size: 4vw;
+  text-align: center;
+  text-decoration: none;
+}
+
+.webringarrow, .webringinfo {
+  padding: 1.3vw;
+}
+
+
+
+
+/* 
+#003399 
+*/
+
+/* 
+BYOL timestamp 1:16:00
+*/
+
+/* 
+color codes:
+blue - #003399
+yellow - #FFCC00
+*/
+
+/* 
+Problem som måste lösas:
+1. Lägga in SVG stjärnor i ett radial mönster
+2. göra iframes för varje stjärna som länkar till landets wiki
+3. animera en rotation på stjärnan så den snurrar ut till sidan
+och öppnar wiki sidan
+4. "dotted" stjärnan ska undvika muspekaren fram tills att användaren
+har klickat på alla stjärnor.
+5. när användaren har klickat på alla stjärnor blir "dotted" tillgänglig
+den länkas då till sidan för att ansöka om att gå med i EU.
+6.
+*/
+
+/*
+Anteckningar möte 06.04.22:
+*/
