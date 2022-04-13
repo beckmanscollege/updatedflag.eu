@@ -1,7 +1,7 @@
 
 function makeStars(countries) {
   const rotation = 360 / countries.length;
-  const radius = 350;
+  const radius = 300;
   const circleDiv = document.getElementById('circle');
   const offsetToParentCenter = Number(circleDiv.offsetWidth / 2);
   const offsetToChildCenter = 20;
