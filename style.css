@@ -1,9 +1,63 @@
 body {
   background-color: #003399 !important;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 * {
   cursor: url(https://cdn.glitch.global/7893a564-d329-49d6-ae3f-cc5926536343/EU_STAR.svg),
     auto;
+}
+
+.collapsible {
+  background-color: transparent;
+  border-radius: 30px;
+  border: 2px dashed #ffcc00;
+  color: #ffcc00;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  left: 30px;
+  top: 30px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.active,
+.collapsible:hover {
+  background-color: none;
+}
+
+.cont {
+  max-height: 0;
+  z-index: 1000000;
+  max-width: 100vw;
+  position: fixed;
+  bottom: 30px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8vw;
+  letter-spacing: 2px;
+  text-align: center;
+  left: 25%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+.ARROW {
+  font-size: 30pt;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #ffcc00;
 }
 
 #EUSTAR {
@@ -15,21 +69,19 @@ body {
   transform: translate(-50%, -50%);
 }
 
+
 .box1 {
   background-color: #003399;
-  width: 400px;
-  height: 80px;
+  margin-top: 20px;
+  width: 350px;
+  height: 60px;
   border-radius: 30px;
-  position: absolute;
-  left: 13%;
-  top: 10%;
-  transform: translate(-50%, -50%);
   border: 5px solid #ffcc00;
   padding: 10px;
 }
 .rubrik {
   color: #ffcc00;
-  font-size: 30px;
+  font-size: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
@@ -41,10 +93,6 @@ body {
   height: 80px;
   opacity: 0.8;
   border-radius: 30px;
-  position: absolute;
-  left: 90%;
-  top: 10%;
-  transform: translate(-50%, -50%);
   border: 5px solid #ffcc00;
   padding: 10px;
 }
@@ -62,17 +110,52 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   background-color: #ffcc00;
+  margin-top: 50px;
   width: 300px;
   height: 90px;
   opacity: 0.8;
   border-radius: 30px;
-  position: absolute;
-  left: 90%;
-  top: 30%;
-  transform: translate(-50%, -50%);
   border: 5px solid #ffcc00;
   padding: 10px;
 }
+
+
+
+#circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.star {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("https://cdn.glitch.global/7893a564-d329-49d6-ae3f-cc5926536343/EU_STAR.svg");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+.container {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.circleColumn {
+  position: relative;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
 
 /*.box3 {
   background-color: #ffcc00;
@@ -98,25 +181,9 @@ body {
 */
 
 
-#circle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
-.star {
-  display: block;
-  height: 40px;
-  width: 40px;
-  background-image: url("https://cdn.glitch.global/7893a564-d329-49d6-ae3f-cc5926536343/EU_STAR.svg");
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-}
 
-.webring {
+/*.webring {
   margin: 0 auto;
   width: 800px;
   height: 100px;
@@ -152,13 +219,17 @@ body {
 .webringarrow, .webringinfo {
   padding: 1.3vw;
 }
-
-
-
-
-/* 
-#003399 
 */
+
+
+
+
+
+
+
+
+
+
 
 /* 
 BYOL timestamp 1:16:00
